@@ -55,3 +55,24 @@ forwardRef를 사용하면 부모가 자식 컴포넌트에 전달한 ref를
 자식이 받아서 특정 DOM에 연결
 
 ---
+
+## 5. Recoil
+
+설치 :: npm i recoil
+
+1. 꼭 index.js에 RecoilRoot 작성
+
+2. atom 작성
+```jsx
+    const textState = atom({
+        key : "textState", // 고유한 키
+        default : "", // 기본값
+    });
+```
+
+3. 사용할 컴포넌트에서 useRecoilState사용
+```jsx
+    const [text, setText] = useRecoilState(textState)
+```
+
+---
