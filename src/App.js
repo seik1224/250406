@@ -1,9 +1,10 @@
 import './App.css';
+import Step01 from './step/step01';
 
 function App() {
   return (
     <>
-    
+      <Step01 />
     </>
   );
 }
